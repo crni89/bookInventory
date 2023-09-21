@@ -1,6 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import re
+from datetime import datetime
 
 app = FastAPI()
 
@@ -21,9 +22,11 @@ def validate_isbn(isbn: str):
     return isbn
 
 
-# Validator koristeci regex koji mora u formi dd.mm.yyyy.
+# Validator datuma
 def validate_date(date: str):
-    if not re.match(r'^[0-9]{2}\.[0-9]{2}\.[0-9]{4}\.$', date):
+    try:
+        parsed_date = datetime.strptime(date, '%d.%m.%Y.')
+    except ValueError:
         raise ValueError("Datum mora biti u formatu dd.mm.yyyy.")
     return date
 
