@@ -1,0 +1,6 @@
+version: '3'
+services:
+  book-inventory:
+    image: anthrazit/book_inventory
+    ports:
+      - "8000:80"
