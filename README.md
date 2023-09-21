@@ -8,10 +8,10 @@
 Aplikacija za vodjenje evidencija knjiga ima par putanja(endpoints) za dodavanje, pretragu, izmenu i brisanje knjiga.
 Knjige se cuvaju lokalno u aplikaciji.
 
-Dodavanje knjige
-: - URL(endpoint): `/books`
-: - Metod: `POST`
-: - Primer JSON-a <br> 
+***Dodavanje knjige***
+- URL(endpoint): `/books`
+- Metod: `POST`
+- Primer JSON-a <br> 
 ```json
 {
   "id": 0,
@@ -21,27 +21,27 @@ Dodavanje knjige
   "datum": "20.09.2023."
 }
 ```
-: - Dodavanje knjige sa posebnim ID
+- Dodavanje knjige sa posebnim ID
 
-Pregled svih knjiga
-: - URL(endpoint): `/books`
-: - Metod: `GET`
-: - Prikaz liste svih knjiga
+***Pregled svih knjiga***
+- URL(endpoint): `/books`
+- Metod: `GET`
+- Prikaz liste svih knjiga
 
-Pregled pojedinacne knjige po ID-u
-: - URL(endpoint): `/books/{book_id}`
-: - Metod: `GET`
-: - Prikaz odredjene knjige sa odgovarajucim ID-om
-: - `book_id`: ID knige koje se trazi
+***Pregled pojedinacne knjige po ID-u***
+- URL(endpoint): `/books/{book_id}`
+- Metod: `GET`
+- Prikaz odredjene knjige sa odgovarajucim ID-om
+- `book_id`: ID knige koje se trazi
 
-Izmenja knjige po ID-u
-: - URL(endpoint): `/books/{book_id}`
-: - Metod: `PUT`
-: - Izmena odredjene knjige sa odgovarajucim ID-om
-: - `book_id`: ID knige koje se izmenjuje
+***Izmenja knjige po ID-u***
+- URL(endpoint): `/books/{book_id}`
+- Metod: `PUT`
+- Izmena odredjene knjige sa odgovarajucim ID-om
+- `book_id`: ID knige koje se izmenjuje
 
-Brisanje knjige po ID-u
-: - URL(endpoint): `/books/{book_id}`
-: - Metod: `DELETE`
-: - Brisanje odredjene knjige sa odgovarajucim ID-om
-: - `book_id`: ID knige koje se izmenjuje
+***Brisanje knjige po ID-u***
+- URL(endpoint): `/books/{book_id}`
+- Metod: `DELETE`
+- Brisanje odredjene knjige sa odgovarajucim ID-om
+- `book_id`: ID knige koje se izmenjuje
